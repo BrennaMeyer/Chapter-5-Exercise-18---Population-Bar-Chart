@@ -12,13 +12,15 @@
 
 using namespace std;
 
+//function Prototypes 
+void DisplayMenu();
+
 int main()
 {
 	ifstream inputFile;
 	string years;
 
-	cout << "PRAIRIEVILLE POPULATION GROWTH\n";
-	cout << "(each * represents 1,000 people)\n";
+	DisplayMenu();
 
 	inputFile.open("People.txt");
 	if (inputFile)
@@ -38,4 +40,9 @@ int main()
 	return 0;
 }
 
+//Display
+void DisplayMenu() {
+	cout << "PRAIRIEVILLE POPULATION GROWTH\n";
+	cout << "(each * represents 1,000 people)\n";
 
+}
